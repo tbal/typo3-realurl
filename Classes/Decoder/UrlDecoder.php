@@ -1274,7 +1274,7 @@ class UrlDecoder extends EncodeDecoderBase implements SingletonInterface {
 			if (!is_array($getVars)) {
 				$getVars = array();
 			}
-			ArrayUtility::mergeRecursiveWithOverrule($getVars, $getVarsToSet, true, true, false);
+			ArrayUtility::mergeRecursiveWithOverrule($getVarsToSet, $getVars, true, true, false);
 
 			// Store the "new" $_GET-params back
 			GeneralUtility::_GETset($getVars);
